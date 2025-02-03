@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and links to stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="/font-awesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css"><!-- External CSS for better maintainability -->
+    <script src="Script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <img src="./Assets/Logo.svg" class="logo"/>
+        <nav>
+            <ul>
+                <li class="heading"><a href="#" id="home-link" onclick="showSection('home')">OUR TEAM</a></li>
+                <li><a href="#" id="about-link" onclick="showSection('about')">PERSONAL DETAILS</a></li>
+                <li><a href="#" id="contact-link" onclick="showSection('contact')">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <main>
+            <div id="home-section">
+                <section id="intro">
+                    <h1>Our Team</h1>
+                    <p class="styled-paragraph">
+                        We believe that great ideas come to life through collaboration and innovation. Our team is a diverse group of passionate professionals, each bringing unique skills and experiences to the table. From creative designers and strategic thinkers to technical experts and problem-solvers, we are united by a shared vision of delivering excellence in everything we do.
+                    </p>
+                    <p class="styled-paragraph">
+                        Our mission is to empower businesses and individuals by creating innovative, sustainable, and user-friendly designs. With a culture that values integrity, growth, and teamwork, we are committed to creating meaningful solutions that make a difference. Whether it’s crafting cutting-edge designs, developing user-centered interfaces, or building sustainable solutions, our team thrives on turning challenges into opportunities.
+                    </p>
+                </section>
+                <!-- Our Team section -->
+                <section>
+                    <div class="team-row">
+                        <div class="team-member">
+                            <img src="./Assets/Image 1.jpg" alt="Meredith Allen">
+                            <p>Meredith Allen <br>CEO</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="./Assets/Image 2.jpg" alt="Thomas Woodward">
+                            <p>Thomas Woodward<br>COO</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="./Assets/Image 3.jpg" alt="Wade Barton">
+                            <p>Wade Barton<br>Business Analyst</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="./Assets/Image 4.jpg" alt="Yahir Marquez">
+                            <p>Yahir Marquez <br>Marketing Executive</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="./Assets/Image 5.jpg" alt="Vera Rodgers">
+                            <p>Vera Rodgers <br>Lead Designer</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="about-section" style="display: none;">
+                <!-- Personal Details section -->
+                <aside class="sidebars">
+                    <section id="details" class="sidebar-section leftsidebar-content white-bg app-cursor" onclick="showSection('home')">
+                        <h2 class="leftside-content">Our Team</h2>
+                    </section>
+                    <!-- <div class=" pink-bg">
+                        <h2>Personal Details</h2>
+                    </div> -->
+                </aside>
+                <main class="form-section">
+                    <h1 class="form-heading">Personal Details</h1>
+                    <form>
+                        <div class="input-group">
+                            <div class="icon-input">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="icon-input">
+                                <i class="fas fa-phone-alt"></i>
+                                <input type="text" id="mobile" name="mobile" placeholder="Enter Your Mobile Number">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="address" name="address" placeholder="Enter Your Address"></textarea>
+                        </div>
+                    </form>
+                </main>
+            </div>
+            <div id="contact-section" style="display: none;">
+                <h1 class="form-heading">Contact Us</h1>
+                <p class="styled-paragraph text-white">We are a team of engineers, communication experts and innovators who specialise in developing technology propositions for the world around us. We noticed that in an overwhelming number of use cases, technology was not really the problem; mistrust came from how it was deployed by creators and then understood and used by consumers.</p>
+            </div>
+        </main>
+        <!-- Sidebar with Personal Details and Contact Us in home section -->
+        <aside class="sidebars">
+            <section id="details" class="sidebar-section leftsidebar-content white-bg" onclick="showSection('home')">
+                <h2 class="leftside-content">Our Team</h2>
+            </section>
+            <section id="contact" class="sidebar-section pink-bg right-sidebars app-cursor" onclick="showSection('about')">
+                <h2>Personal Details</h2>
+            </section>
+            <section id="contact-aside" class="sidebar-section orange-bg right-sidebar app-cursor" onclick="showSection('contact')">
+                <h2>Contact Us</h2>
+            </section>
+        </aside>
+    </div>
+<!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <span>We’ve got one planet—let’s treat it right.</span>
+            <span>© 2024 Company Name</span>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+   
+</body>
+</html>
